@@ -1,0 +1,53 @@
+/* element seletor: h1 */
+h1{
+	text-decoration: underline;
+	color: blue;
+}
+
+/* Universal selector */
+*{
+	background-color: hsla(57, 23%, 60%, 0.5); 
+	/* opacity: 0.7; */
+	/*background-image: url(nairobi.jpg); */
+	/* background-repeat: no-repeat;
+	background-size: cover; */
+}
+
+/* ID selector */
+#heading1{
+	font-style: italic;
+	font-family: 'Roboto Mono', monospace;
+	/*font-family: sans-serif;*/
+}
+
+/* Class selector */
+.makeBold{
+	font-weight: bolder;
+}
+
+/* Attriute selector */
+[type="text"]{
+	color: blue;
+}
+
+/* Grouping selector */
+h1, p, a{
+
+}
+
+/* Descendant selector */
+div.topLinks a{
+	font-size: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(96, 88, 214);
+	/* shorthand for these properties would be: */
+	/* border: 1px solid black; */	
+	text-decoration: none;
+	padding-top: 10px;
+	padding-right: 10px;
+	/* Shorthand for padding would be: */
+	/* padding: top right left bottom */
+	/* if all are same size; padding: size would suffice */
+	margin: 10px;
+}

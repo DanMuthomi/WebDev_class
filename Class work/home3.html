@@ -1,0 +1,41 @@
+<!-- Starting on CSS 03/06/23 -->
+<!-- Basic structure of HTML files -->
+<!DOCTYPE html> <!-- helps browser know it is a html5 doc -->
+<html>
+	<head> <!-- info about the page -->
+		<!-- set encoding type -->
+		<meta charset="utf-8">
+		<!-- set scalling to appear correctly on all devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> </title>
+		<!-- Using google fonts to import extra font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+
+	</head>
+	<body> <!-- elements to be seen on the page-->
+		<!-- Inline CSS -->
+		<!-- inline css has priority over both internal and external css -->
+		<h1 style="color: red;" id="heading1" class="makeBold">
+			our heading
+		</h1>
+		<div class="topLinks">
+			<a href="">Home</a>
+			<a href="">About</a>
+			<a href="">Courses</a>
+		</div>
+		<input type="text" name="username" placeholder="Enter username">
+		<a href="">Login</a>
+		<!-- Internal CSS -->
+		<style type="text/css">
+			h1{
+				color: green;
+				text-align: center;
+			}
+		</style>
+		<!-- External css -->
+		<!-- linking an external file to our html -->
+		<link rel="stylesheet" href="index.css">
+	</body>
+</html>

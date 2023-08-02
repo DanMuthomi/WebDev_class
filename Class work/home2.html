@@ -1,0 +1,193 @@
+<!-- Basic structure of HTML files -->
+<!DOCTYPE html> <!-- helps browser know it is a html5 doc -->
+<html>
+	<head> <!-- info about the page -->
+		<title> Web Dev Evening</title>
+	</head>
+	<body> <!-- elements to be seen on the page-->
+		<!-- headings -->
+		<!-- style attribute to style elements -->
+		<!-- is a hectic method to style asit is inline styling -->
+		<!-- this means that all elements need to be styled individually. Easier in CSS -->
+		<h1 style="text-align: center; text-decoration: underline;">HELLO WORLD</h1>
+		<!--	
+		<h2>HELLO WORLD</h2>
+		<h3>HELLO WORLD</h3>
+		<h4>HELLO WORLD</h4>
+		<h5>HELLO WORLD</h5>
+		<h6>HELLO WORLD</h6>
+		-->
+		<!-- paragraphs -->
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<!-- links -->
+		<!-- <a> is the first element we are looking at-->
+		<!-- elements have attributes placed in opening tab. For links it its href -->
+		<a href="https://strathmore.edu/">Go to Strathmore site</a>
+		<!-- this element can also link to another file we've created -->
+		<a href="index.html">Courses</a>
+		<!-- to avoid linking to a non existent file, # can be used instead of leaving the attribute empty -->
+		<a href="#">Units</a>
+		<!-- images -->
+		<!-- image is self closing and attribute source -->
+		<!--width attribute scales so just one suffices. 
+			alt provides descriptive text incase source image fails  -->
+		<!-- br breaks to a new line -->
+		<br>
+		<img src="nairobi.jpg" width="30%" alt="Nighttime Nairobi skyline" >
+		<br>
+		<!-- tables -->
+		<!-- border attribte to put borders on our table -->
+		<table border="1px" width="50%">
+			<!-- tr creates table row -->
+			<tr>
+				<!-- colspan used to merge fields in a table. rowspan used for rows 
+					number describes how far to span-->
+				<th colspan="4">Student Details</th> 
+			</tr>
+			<tr>
+				<th rowspan="6">Listed</th>
+			</tr>
+			<tr>
+				<!-- td Table Data, creates columns. each td is each column -->
+				<!-- th can be used to designate, using bold, the header row of the table -->
+				<th>Student Name</th>
+				<th>Student Number</th>
+				<th>Course</th>
+			</tr>
+			<tr>
+				<td>Lorem Ipsum</td>
+				<td>52555</td>
+				<td>latin</td>
+			</tr>
+			<tr>
+				<td>Bon voyage</td>
+				<td>54905</td>
+				<td>Sailing</td>
+			</tr>
+			<tr>
+				<td>Arivadeche</td>
+				<td>66562</td>
+				<td>Hand gestures</td>
+			</tr>
+			<tr>
+				<td>Don Julio</td>
+				<td>88225</td>
+				<td>Mescal making</td>
+			</tr>
+		</table>
+		<h2>First Form</h2>
+		<!-- forms and form elements -->
+		<!-- action attribute selects where the form should be stores in the DB once submitted -->
+		<form action="registration.php" method="post">
+			<!-- Div element converts an inline elements into a block elements -->
+			<!-- this allows the element to take up the whole line on the page -->
+			<div>
+				<!-- label is a more appropriate way of adding tags too input fields compared to paragraphs -->
+				<label for="username">Username:</label>
+				<!-- input creates an input field -->
+				<!-- type defines type of data to be received. defauls to text(alphanumeric characters) -->
+				<!-- name helps link input to datatype in backend -->
+				<!-- placeholder houses descrition for user on data needed -->
+				<!-- required highlights necessary fields that cannot remain empty -->
+				<input type="text" name="username" placeholder="Enter your username" required>
+			</div>
+			<div>
+				<label for="useremail">Email:</label>
+				<input type="email" name="useremail" placeholder="Enter email" required>
+			</div>
+			<div>
+				<label for="password">Password:</label>
+				<input type="password" name="password" placeholder="Enter password" required>
+			</div>
+			<div>
+				<label for="userdob">Date of Birth:</label>
+				<input type="Date" name="userdob" placeholder="Enter date of birth" required>
+			</div>
+			<div>
+				<label for="number">Number:</label>
+				<input type="Number" name="number" placeholder="Enter random number">
+			</div>
+			<!-- Radio buttons -->
+			<!-- Radio buttons used for drop down select options -->
+			<!-- Radio buttons should have the same name to keep user to only selecting one -->
+			<!-- Value attribute here is important as they are the defaults for select option -->
+			<label for="gender">Gender:</label>
+			<div>
+				<label>Male</label>
+				<input type="radio" name="gender" value="male">
+				<label>Female</label>
+				<input type="radio" name="gender" value="female">
+			</div>
+			<!-- Checkbox -->
+			<!-- unlike radio button, checkbox should have different names to allow multiple inputs -->
+			<div>
+				<p>Select units</p>
+				<label>Latin</label>
+				<input type="checkbox" name="unit1">
+				<label>Sailing</label>
+				<input type="checkbox" name="unit2">
+				<label>Mescal making</label>
+				<input type="checkbox" name="unit3">
+			</div>
+			<br>
+			<!-- Select element -->
+			<!-- used for selecting options off a drop down menu -->
+			<div>
+				<label for="meals">Meal:</label>
+				<select name="meals">
+					<option>--select meal</option>
+					<option>Rice</option>
+					<option>Beans</option>
+					<option>Chapati</option>
+					<option>Ugali</option>
+				</select>
+			</div>
+			<br>
+			<br>
+			<!-- text area used to provide text field -->
+			<textarea rows="5" cols="10">Why should you join us</textarea>
+			<div>
+				<input type="submit" name="submit">
+				<input type="reset" name="reset">
+				<!-- Button -->
+				<!-- buttons usefull as you can embed icons and other items within it -->
+				<button>
+					<img src="nairobi.jpg" width="2%">
+					Login
+				</button>
+			</div>
+		</form>
+		<!-- Lists -->
+		<!-- Ordered lists -->
+		<ol>
+			<li>Nairobi</li>
+			<li>Nakuru</li>
+			<li>Mombasa</li>
+		</ol>
+		<!-- Unordered lists -->
+		<ul>
+			<li>Tom Mboya street</li>
+			<li>Moi Avenue</li>
+			<li>AgaKhan walk</li>
+		</ul>
+		<!-- Various text editing elements -->
+		<div>
+			<label>Bold text:</label>
+			<b>Test text</b>
+		</div>
+		<strong>Test text</strong>
+		<i>Test text</i>
+		<em>Test text</em>
+		<mark>Test text</mark>
+		<small>Test text</small>
+		<del>Test text</del>
+		<ins>Test text</ins>
+		<sub>Test text</sub>
+		<sup>Test text</sup>
+	</body>
+</html>
