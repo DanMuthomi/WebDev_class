@@ -8,6 +8,8 @@ function validateForm() {
   const city = document.getElementsByName("city")[0].value;
   const country = document.getElementsByName("country")[0].value;
   const animalSpecies = document.getElementsByName("animalSpecies")[0].value;
+  const password = document.getElementById("password").value;
+  const form = document.getElementById("adoptionForm");
   const adoptionPackage = document.querySelector('input[name="adoptionPackage"]:checked');
   const additionalComments = document.getElementsByName("additionalComments")[0].value;
   const tncCheckbox = document.getElementsByName("TnC")[0];
@@ -46,11 +48,18 @@ function validateForm() {
     return false;
   }
 
-  // Check if the password contains at least one number and one uppercase letter
-  if (!/^[A-Z0-9]+$)/.test(additionalComments)) {
-    alert("Password should have at least one number and one uppercase letter.");
+  // Function to validate the password field
+function validatePassword() {
+
+  // Check if the password contains only uppercase letters and numbers
+  if (!/^[A-Z0-9]+$/.test(password)) {
+    alert("Password should contain only uppercase letters and numbers.");
     return false;
   }
+
+  return true;
+}
+
 
   // If all validations pass, show success message using a dialog box
   const selectedAccount = adoptionPackage.value === "digitalAdoption" ? "Digital Adoption" : "Physical Adoption";
