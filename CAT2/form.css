@@ -1,0 +1,31 @@
+*{
+	/*paddings and margins added to wit=dth set: width=100 + pad=10 = 110*/
+	/*box sizing remedies the overlap beyond set size*/
+	box-sizing: border-box;
+}
+.register{
+	background-color: #86c69d;
+	padding: 15px;
+	/*to round off corners*/
+	border-radius: 8px;
+}
+select, [type="text"], [type="password"], [type="number"], [type="date"]{
+	width: 100%;
+	padding: 10px 14px;
+	/*another way of changing appearance*/
+	/*display: block;*/
+	border-radius: 8px;
+	border: 1px solid hsl(210, 79%, 40%);
+	margin-bottom: 10px;
+}
+[type="submit"]{
+	width: 100%;
+	padding: 10px 14px;
+	border-radius: 8px;
+	border: none;
+	background-color: #638c71;
+	margin-top: 10px;
+}
+[type="submit"]:hover{
+	opacity: 0.8;
+}

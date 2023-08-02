@@ -1,0 +1,28 @@
+*{
+	font-family: 'Roboto Mono', monospace;
+}
+.navBar{
+	background-color: #8ebd9f;
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+li a{
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	padding: 10px 14px;
+}
+li a:hover{
+	/*opacity: 0.5;*/
+	background-color: #75c692;
+	color: white;
+}
+li{
+	display: inline;
+}
+.active{
+	color: #75c692;
+	background-color: black;
+}
