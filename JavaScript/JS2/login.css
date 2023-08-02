@@ -1,0 +1,66 @@
+*{
+	/*paddings and margins added to wit=dth set: width=100 + pad=10 = 110*/
+	/*box sizing remedies the overlap beyond set size*/
+	box-sizing: border-box;
+}
+h1{
+	text-align: center;
+}
+.login{
+	background-color: rgb(103, 224, 227);
+	padding: 15px;
+	/*to round off corners*/
+	border-radius: 8px;
+}
+select, [type="text"], [type="password"]{
+	width: 100%;
+	padding: 10px 14px;
+	/*another way of changing appearance*/
+	/*display: block;*/
+	border-radius: 8px;
+	border: 1px solid hsl(210, 79%, 40%);
+	margin-bottom: 10px;
+}
+[type="submit"]{
+	width: 100%;
+	padding: 10px 14px;
+	border-radius: 8px;
+	border: none;
+	background-color: #41cc36;
+	margin-top: 10px;
+}
+[type="submit"]:hover{
+	opacity: 0.8;
+}
+/*styling nav bar*/
+.topNavList{
+	background-color: #87e7a9;
+	list-style-type: none;
+	/*to remove or accomodate overflowing elements*/
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+li a{
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	padding: 10px 14px;
+}
+li a:hover{
+	/*opacity: 0.5;*/
+	background-color: #75c692;
+	color: white;
+}
+li{
+	display: inline;
+	/*altenative to shifting list to inline*/
+	/*float: right;*/
+}
+.active{
+	color: #75c692;
+	background-color: black;
+}
+.rightlink{
+	float: right;
+}
